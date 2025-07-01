@@ -12,14 +12,14 @@ import java.time.LocalDate;
  * @author Jonathan
  */
 public class Caso {
-     private int id;
+    private String id;
     private Victima victima;
     private String descripcion;
     private String tipo;
     private LocalDate fecha;
     private PrioridadE prioridad;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -45,7 +45,7 @@ public class Caso {
     
     
 
-    public Caso(int id, Victima victima, String descripcion, String tipo, LocalDate fecha, PrioridadE prioridad) {
+    public Caso(String id, Victima victima, String descripcion, String tipo, LocalDate fecha, PrioridadE prioridad) {
         this.id = id;
         this.victima = victima;
         this.descripcion = descripcion;
