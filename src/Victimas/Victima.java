@@ -12,13 +12,13 @@ import java.time.Period;
 public class Victima {
     private String cedula;
     private String nombre;
-    private String fechaNacimiento;
+    private LocalDate fechaNacimiento;
     private String genero;
     private String correo;
     private String telefono;
     private String direccion;
 
-    public Victima(String cedula, String nombre, String fechaNacimiento, String genero, String correo, String telefono, String direccion) {
+    public Victima(String cedula, String nombre, LocalDate fechaNacimiento, String genero, String correo, String telefono, String direccion) {
         this.cedula = generarHash(cedula);
         this.nombre = generarHash(nombre);
         this.fechaNacimiento = fechaNacimiento;
@@ -40,7 +40,7 @@ public class Victima {
         return nombre;
     }
 
-    public String getFechaNacimiento() {
+    public LocalDate getFechaNacimiento() {
         return fechaNacimiento;
     }
 
